@@ -10,12 +10,10 @@
 	<packaging>war</packaging>
 
 	<name>resteasy</name>
-	<!-- FIXME change it to the project's website -->
-	<!-- <url>http://www.example.com</url> -->
 
 	<properties>
 		<resteasy.version>3.0.14.Final</resteasy.version>
-		<build.finalName>REST</build.finalName>
+		<build.finalName>R</build.finalName>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
@@ -47,14 +45,14 @@
 					<version>9.2.3.v20140905</version>
 					<configuration>
 						<webApp>
-							<contextPath>/${build.finalName}</contextPath>
+							<contextPath>/</contextPath>
 						</webApp>
 						<stopKey>CTRL+C</stopKey>
 						<stopPort>8999</stopPort>
 						<scanIntervalSeconds>10</scanIntervalSeconds>
-						<webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
+						<webAppSourceDirectory>webapp</webAppSourceDirectory>
 						<scanTargets>
-							<scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
+							<scanTarget>WEB-INF/web.xml</scanTarget>
 						</scanTargets>
 					</configuration>
 				</plugin>

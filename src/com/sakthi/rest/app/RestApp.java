@@ -9,7 +9,7 @@ import javax.ws.rs.core.Application;
 
 import com.sakthi.rest.service.PersonServiceImpl;
 
-@ApplicationPath("/rest")
+@ApplicationPath("/api")
 public class RestApp extends Application
 {
 
