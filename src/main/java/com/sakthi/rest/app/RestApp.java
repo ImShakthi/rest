@@ -7,7 +7,7 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import com.sakthi.rest.service.PersonServiceImpl;
+import com.sakthi.rest.service.UserServiceImpl;
 
 @ApplicationPath("/api")
 public class RestApp extends Application
@@ -17,7 +17,7 @@ public class RestApp extends Application
 
     public RestApp()
     {
-        singletons.add(new PersonServiceImpl());
+        singletons.add(new UserServiceImpl());
     }
 
     @Override

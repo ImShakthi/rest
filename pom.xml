@@ -13,7 +13,7 @@
 
 	<properties>
 		<resteasy.version>3.0.14.Final</resteasy.version>
-		<build.finalName>R</build.finalName>
+		<build.finalName>RestEasy</build.finalName>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
@@ -50,9 +50,9 @@
 						<stopKey>CTRL+C</stopKey>
 						<stopPort>8999</stopPort>
 						<scanIntervalSeconds>10</scanIntervalSeconds>
-						<webAppSourceDirectory>webapp</webAppSourceDirectory>
+						<webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
 						<scanTargets>
-							<scanTarget>WEB-INF/web.xml</scanTarget>
+							<scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
 						</scanTargets>
 					</configuration>
 				</plugin>
@@ -67,7 +67,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.3</version>
+					<version>3.7.0</version>
 					<configuration>
 						<source>1.7</source>
 						<target>1.7</target>
@@ -77,10 +77,6 @@
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.7.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>

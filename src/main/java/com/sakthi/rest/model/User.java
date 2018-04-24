@@ -2,8 +2,8 @@ package com.sakthi.rest.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "person")
-public class Person
+@XmlRootElement(name = "user")
+public class User
 {
     private String name;
     private int age;
