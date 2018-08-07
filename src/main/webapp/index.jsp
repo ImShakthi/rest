@@ -8,11 +8,5 @@
 </head>
 <body>
 <h1> REST Example</h1>
-<ul>
-	<li>GET - /api/users/</li>
-	<li>GET - /api/users/{id}</li>
-	<li>POST - /api/users/</li>
-	<li>GET - /api/users/{id}/dummy</li>
-</ul>
 </body>
 </html>

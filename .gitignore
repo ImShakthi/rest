@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 target/
 *~
 /src/main/webapp/WEB-INF/lib/
+=======
+target/
+*~
+>>>>>>> parent of 8c48fa2... Made few changes in API 

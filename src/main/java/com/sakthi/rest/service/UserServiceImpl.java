@@ -17,8 +17,8 @@ import com.sakthi.rest.model.User;
 import com.sakthi.rest.model.ResponseData;
 
 @Path("/users")
-@Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+@Consumes(MediaType.APPLICATION_XML)
+@Produces(MediaType.APPLICATION_XML)
 public class UserServiceImpl implements UserService
 {
 
@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService
 
     @Override
     @POST
+//    @Path("/add")
     public ResponseData addUser(User p)
     {
         ResponseData response = new ResponseData();
@@ -67,16 +68,16 @@ public class UserServiceImpl implements UserService
         return users.get(id);
     }
 
-    @GET
-    @Path("/{id}/dummy")
-    public User getDummyUser(@PathParam("id") int id)
-    {
-        User p = new User();
-        p.setAge(25);
-        p.setName("Dummy");
-        p.setId(id);
-        return p;
-    }
+//    @GET
+//    @Path("/{id}/getDummy")
+//    public User getDummyUser(@PathParam("id") int id)
+//    {
+//        User p = new User();
+//        p.setAge(99);
+//        p.setName("Dummy");
+//        p.setId(id);
+//        return p;
+//    }
 
     @Override
     @GET
